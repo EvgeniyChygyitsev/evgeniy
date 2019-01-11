@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tajam</title>
+	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel:700|Signika:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Cinzel:700|Signika:300" rel="stylesheet">
+	<script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+	<script type="text/javascript" src="dist/js/bootstrap.js"></script>
+	<style>
+	#header{background: url(forest.png) center; position: relative;z-index: 1; background-size: cover;}	
+	#header:after,
+    #inner_header:after  {background-color: #201a40;
+    content: "";
+    left: 0;
+    opacity: 0.9;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;}
+    .menu img{width: 90px;}  
+    .foto-header{display: block; text-align: center;} 
+    .spicok{padding-top: 15px;}
+    .spicok li{display: inline-block; font-weight: bold; font-size: 11px; text-transform: uppercase; padding: 6px 6px;}
+    .spicok a:hover{color:#05d3c7;}
+    .spicok a{text-decoration: none;  color: white;}
+    .header-cont{padding-top: 100px;}
+    .perexod{text-align: center; display: block; margin-top: 40px; margin-bottom: 40px;}
+    .perexod a{border:1px solid #52c3c0; color:#52c3c0; padding:8px 7px; text-transform: uppercase; font-size: 12px; text-decoration: none;}
+     h1{color:white;text-align:center; font-size: 24px; font-family: 'Abril Fatface', cursive;}
+     h2{font-family: 'Cinzel', serif; font-size: 20px;}
+     h3{ font-size: 12px; text-transform: uppercase; font-weight: bold;}
+     h4{ font-size: 11px; text-transform: uppercase; font-weight: bold; color:white; text-align: center;}
+     hr{width: 60px; border-top:1px solid #05d3c7;}
+     p{font-family: 'Signika', sans-serif;}
+     .header-text{color:white; text-align:center; font-size: 11px; line-height: 20px; padding-right: 150px;padding-left: 150px;}
+     #second-block img{width: 180px; float: right; padding-top: 40px;}
+     #second-block p{font-size: 11px; color:grey; width: 70%;}
+    .second-block-text{padding-top: 20px;}
+    #third-block{background: url(Moskva.jpg) center; position: relative;z-index: 1; background-size: cover; padding-top: 150px;padding-bottom: 150px;}
+    #third-block p{text-align: center; text-transform: uppercase; font-weight: bold; font-size: 11px;  color:white; padding-top: 15px }
+    #third-block img{widows: 70px; margin:0 auto;display: block; }
+    #third-block:after,
+    #inner_third-block:after  {background-color: #201a40;
+    content: "";
+    left: 0;
+    opacity: 0.9;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;}
+    #fourth-block{padding-bottom: 70px;}
+    #fourth-block h2{text-align: center;}
+    #fourth-block p{font-size: 11px; color: grey; text-align: center;}
+     #fourth-block h3{text-align: center;}
+    .fourth-block-line{width: 40px; border-top:1px solid #d2c6c6; padding-bottom: 50px;}
+    #fourth-block ul{display: flex; padding-right: 40px; justify-content: center; margin-bottom: 0px;}
+    #fourth-block li{display: block;width: 250px; padding: 0px 20px; }
+    #fourth-block li:nth-child(n+2){border-left: 1px solid #99999940;}
+    .ul-niz li {border-top: 1px solid #99999940;}
+    #fourth-block img{width: 50px; margin: 0 auto;display: block; padding-top: 20px;}
+    #fifth-block{background: url(forest.png) center; position: relative;z-index: 1; background-size: cover;}
+    #fifth-block:after,
+    #inner_#fifth-block:after  {background-color: #201a40;
+    content: "";
+    left: 0;
+    opacity: 0.9;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;}
+    #fifth-block h2{text-align: center; color:white;}
+    #fifth-block p {font-size: 11px; color: grey; text-align: center; text-transform: uppercase; font-weight: bold;}
+    .fifth-block-line{width: 40px; border-top:1px solid #d2c6c6;}
+    #fifth-block ul {display: flex;justify-content: center;padding-right: 40px;}
+    #fifth-block li{display: block; border:1px solid white; margin-right: 10px; margin-left: 10px;}
+    #fifth-block img{width: 180px;}
+    .fifth-block-text{padding-top: 100px; color:white !important;}
+    #sixth-block{padding-top: 30px; margin-bottom: 130px;}
+    #sixth-block h2{text-align: center;}
+    .sixth-block-a {text-align: center; display: block; padding-top: 20px; text-decoration: none; color:grey; }
+    #sixth-block img{width: 15px;}
+    .our-works img{width: 100%!important; padding-top: 50px;}
+    #seventh-block{background: url(forest2.png) center; position: relative;z-index: 1; background-size: cover;}
+    #seventh-block:after,
+    #inner_#seventh-block:after  {background-color: #201a40;
+    content: "";
+    left: 0;
+    opacity: 0.9;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;}
+    #seventh-block p{color:white; text-align: center;padding-left:240px;padding-right: 240px; font-size: 12px; line-height: 20px;}
+    #seventh-block img{margin:0 auto; display: block; width:40px; padding-bottom: 40px;  padding-top: 40px;}
+
+    #eighth-block{margin-bottom: 50px;}
+    #eighth-block input{display: block; width: 70% ; padding: 5px 10px; border:1px solid #80808059;}
+    #eighth-block textarea{  width: 70% ;resize: none; display: block; padding: 5px 10px; border:1px solid #80808059;}
+    #eighth-block form div{margin: 20px; display: flex;justify-content: flex-end;}
+    #eighth-block  button{ color: #52c3c0 ;background: white;border: 1px solid #52c3c0; padding: 5px 15px; font-weight: bold; margin-left: 75px;}
+     #eighth-block h2{padding: 20px 0px;}
+    .h2-form{ text-align: center; margin-left: 35px;} 
+    .foto-logotip img{width: 300px; padding-left: 5px}
+     .foto-logotip h2{margin-left: 10px}
+    #footer{background: url(work.png) center; position: relative;z-index: 1; background-size: cover; padding-bottom: 50px;}
+    #footer:after,
+    #inner_#footer:after  {background-color: #201a40;
+    content: "";
+    left: 0;
+    opacity: 0.9;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;}
+    #footer p{color: white;}
+    #footer li{display: inline; color:white; }
+    #footer h3{color:white; text-transform: uppercase; display: block; padding-top: 10px;}
+    #footer ul{padding-left: 0px;}
+    #footer address{display: inline-block; padding-top: 30px;}
+    #footer li p{display: inline-block; }
+    #footer li img{display: inline-block; width:20px;}
+   .footer-center li{display: block !important; }
+   .logo-footer{padding: 20px 0px;}
+   .logo-footer img{width: 25px;}
+   .copyright{padding-top: 20px; float: right; font-size: 10px;}
+   .footer-block{margin:0px 150px;}
+   .footer-block p{padding-top: 20px;font-size: 11px;}
+   .footer-li{text-transform: uppercase; font-size: 10px;}
+   .footer-li li{ padding-right: 30px;}
+   .footer-li li:nth-child(3){padding-right:0px;}
+   .subcribe{background-color: transparent; border: 1px solid #d3d3d3; padding: 5px 5px; color:#d3d3d3;}
+  .footer-button{background-color: #efecec73; border: 0px solid black; opacity: 0.9; position: absolute; z-index: 1; padding: 5px 15px; margin-left: 10px;}
+  .footer-button img{width: 20px;}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div id="first-block">
+		  <div class="container">
+				<div class="row">
+					<div class="menu">
+						<div class="col-md-4 foto-header">
+						   <img src="logo.png">
+						</div>
+						<div class="col-md-8">
+							<ul class="spicok">
+								<li><a href="#header">home</a></li>
+								<li><a href="#second-block">about</a></li>
+								<li><a href="#fourth-block">expertise</a></li>
+								<li><a href="#fifth-block">teams</a></li>
+								<li><a href="#sixth-block">works</a></li>
+								<li><a href="#seventh-block">people say</a></li>
+								<li><a href="#footer">contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>	
+				<div class="header-cont">
+					<div class="row">
+						<div class="col-md-12">
+							<h1>We Are Awesome Creative Agency</h1>
+							<hr color="#3e759c">
+							<p class="header-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.s</p>
+							<div class="perexod">
+						    <a href="">Learn more</a>
+						    </div>
+						</div>
+					</div>
+				</div>
+		   </div>
+		</div> <!--first-block-->
+	</div>
+	<div id="center">
+		<div id="second-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<img src="tri.png">
+					</div>
+					<div class="col-md-7 second-block-text">
+						<h2>Our Story</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+						<p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue. </p>
+					</div>
+					<div class="col-md-12">
+						<div class="perexod">
+						    <a href="">Learn more</a>
+						</div></div>
+				</div>
+			</div>
+		</div>
+		<div id="third-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<img src="play.png">
+						<p>watch our story</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="fourth-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>expertize</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+						<hr class="fourth-block-line">
+						<ul>
+							<li>
+								<img src="monitor.png">
+								<h3>web design & development</h3>
+								<p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled .</p>
+							</li>
+							<li>
+								<img src="brush.png">
+								<h3>branding identity</h3>
+								<p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled .</p>
+							</li>
+							<li>
+								<img src="phone.png">
+								<h3>mobile app</h3>
+								<p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled .</p>
+							</li>
+						</ul>
+						<ul class="ul-niz">
+							<li>
+								<img src="round.png">
+								<h3>search engine optimization</h3>
+								<p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled .</p>
+							</li>
+							<li>
+								<img src="game.png">
+								<h3>game development</h3>
+								<p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled .</p>
+							</li>
+							<li>
+								<img src="heart.png">
+								<h3>made with love</h3>
+								<p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled .</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="fifth-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>met our amazing consectetur</h2>
+						<p>Lorem ipsum dolor sit amet consectetur consectetur elit</p>
+						<hr class="fifth-block-line">
+						<ul>
+								<li>
+									<img src="white.jpg">
+									<h4>sems usik</h4>
+									<p>denounce</p>
+								</li>
+								<li>
+									<img src="white.jpg">
+									<h4>dik adalin</h4>
+									<p>consectetur</p>
+								</li>
+								<li>
+									<img src="white.jpg">
+									<h4>jeng kon</h4>
+									<p>consectetur</p>
+								</li>
+								<li>
+									<img src="white.jpg">
+									<h4>piter romak</h4>
+									<p>consectetur</p>
+								</li>
+							</ul>
+							<p class="fifth-block-text">Become part of our dream team. let`s joim us.</p>
+							<div class="perexod">
+						    <a href="">we are hiring</a>
+						    </div>
+						
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div id="sixth-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h2>our works</h2>
+					</div>
+					<div class="col-md-6">
+						<a href="" class="sixth-block-a">See All Project in dribble <img src="arrow.png"></a>
+					</div>
+				</div>
+			</div>
+			<div class="our-works">
+				<img src="foto-fon.png">
+				
+			</div>
+			
+				<div class="col-md-12">
+					<div class="perexod">
+						    <a href="">Load more</a>
+						    </div>
+				</div>
+			
+		</div>
+		<div id="seventh-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<img src="Left double quote.png">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="eighth-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h2 class="h2-form">GIVE AS A GOOD NEWS</h2>
+						<form>
+							<div><input type="text" name="" placeholder="Name"></div>
+							<div><input type="text" name="" placeholder="Email"></div>
+							<div><input type="text" name="" placeholder="Subject"></div>
+							<div><textarea placeholder="Your Message"></textarea></div>
+							<div><button>submit</button></div>
+						</form>
+					</div>
+					<div class="col-md-6">
+						<div class="foto-logotip">
+							<h2>OUR HAPPY CLIENT</h2>
+							<img src="logotip.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="container">
+			<div class="row footer-block">
+				<div class="col-md-4">
+					<img src="logo.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<ul class="footer-li">
+						<li>help</li>
+						<li>terms & conditions</li>
+						<li>privacy</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h3>our studio</h3>
+					<ul class="footer-center">
+						<li>
+							<img src="location.png">
+							<address>Kiev prospect Peremogi 23</address>
+						</li>
+						<li>
+							<img src="tell.png">
+							<p>+38(050)483-75-61</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-4 ">
+					<h3> stay in touch</h3>
+					<input type="text" name="" class="subcribe" placeholder="Subcribe us"> 
+					<button class="footer-button"><img src="airplane.png"></button>
+					<div class="logo-footer">
+						<img src="google.png">
+						<img src="insta.png">
+						<img src="vk.png">
+						<img src="odn.png">
+						<img src="youtube.png">
+						<img src="facebook.png">
+					</div>
+					<p class="copyright">Copyright &copy;-Tajem Celected2015 </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
